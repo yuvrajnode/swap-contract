@@ -1,29 +1,27 @@
 # Solana Swap
 
-A Solana token swap application using Jupiter Aggregator for optimal swap routes across Solana DEXs.
+A Node.js Solana token swap service using Jupiter Aggregator for optimal swap routes across Solana DEXs.
 
 ## Overview
 
-This project enables seamless token swaps on Solana by leveraging Jupiter's liquidity aggregation. It consists of a Node.js backend service for executing swaps and a React frontend for user interaction.
+This project enables seamless token swaps on Solana by leveraging Jupiter's liquidity aggregation. It provides a simple Node.js service for executing swaps directly from the command line.
 
 ## Features
 
 - **Token Swaps**: Swap any SPL token using Jupiter's liquidity aggregation
 - **Optimal Routes**: Automatically finds the best swap routes across multiple DEXs
 - **Wallet Integration**: Secure wallet signing and transaction execution
-- **React Frontend**: Modern UI for swap interactions
 - **Real-time Quotes**: Live price quotes and slippage protection
 
 ## Project Structure
 
 ```
 solana-swap/
-├── swap.js              # Backend swap execution service
-├── Frontend/            # React frontend application
-│   └── src/
-│       └── App.tsx      # Main application component
+├── swap.js              # Main swap execution script
 ├── package.json         # Node.js dependencies
-└── .env                 # Environment configuration
+├── .env.example         # Environment variables template
+├── .gitignore          # Git ignore rules
+└── README.md            # Documentation
 ```
 
 ## Quick Start
@@ -66,16 +64,6 @@ This will:
 2. Request a swap transaction from Jupiter
 3. Sign and submit the transaction
 4. Output the Solscan transaction URL
-
-### Frontend Development
-
-The frontend is built with React and TypeScript:
-
-```bash
-cd Frontend
-npm install
-npm run dev
-```
 
 ## Configuration
 
