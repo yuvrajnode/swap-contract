@@ -1,18 +1,27 @@
 {
   "name": "solana-swap",
   "version": "1.0.0",
-  "description": "Full-stack Solana swap application with React frontend and Node.js backend",
-  "private": true,
+  "description": "",
+  "main": "swap.js",
   "scripts": {
-    "install:all": "cd Backend && npm install && cd ../Frontend && npm install",
-    "dev": "concurrently \"cd Backend && npm run dev\" \"cd Frontend && npm run dev\"",
-    "build": "cd Frontend && npm run build",
-    "start": "cd Backend && npm start"
+    "start": "node swap.js"
   },
-  "keywords": ["solana", "swap", "jupiter", "defi"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuvrajnode/swap-contract.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "concurrently": "^8.2.2"
+  "bugs": {
+    "url": "https://github.com/yuvrajnode/swap-contract/issues"
+  },
+  "homepage": "https://github.com/yuvrajnode/swap-contract#readme",
+  "dependencies": {
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/web3.js": "^1.98.4",
+    "axios": "^1.13.5",
+    "bs58": "^6.0.0",
+    "dotenv": "^17.2.4"
   }
 }
